@@ -1,0 +1,59 @@
+\documentclass{layout/SLIITeXFormalReport}
+
+\title{An AI-driven Virtual Preparation Platform for Interviews}
+\author{H. A. A. Prabhashvara}
+\registrationno{MS21912016}
+\specialization{MSc. in IT (EAD)}
+\supervisorname{Dr. Nuwan Kodagoda}
+\department{Information Technology}
+\modulename{Research Project}
+
+\linespread{1.25}
+
+\begin{document}
+
+\frontmatter
+
+\makecover
+
+\makedeclaration
+
+\input{chapters/0-abstract.tex}
+
+\makeacknowledgement
+
+\clearpage
+\tableofcontents
+
+\clearpage
+\listoffigures
+
+\clearpage
+\listoftables
+
+\mainmatter
+
+%% Reset chapter title centering
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}
+{\chaptertitlename\ \thechapter}{20pt}{\SizeB}
+
+\input{chapters/1-introduction.tex}
+
+\input{chapters/2-literature_review.tex}
+
+\input{chapters/3-proposed_methodology.tex}
+
+\input{chapters/4-proposed_testing_&_evaluation.tex}
+
+\input{chapters/5-conclusion.tex}
+
+\printbibliography[title=References]
+\addcontentsline{toc}{chapter}{References}
+\nocite{*}
+
+\appendix
+
+% Add appendix pages here.
+
+\end{document}
